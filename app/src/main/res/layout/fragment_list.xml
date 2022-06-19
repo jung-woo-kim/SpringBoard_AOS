@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="60dp"
+    android:background="@color/background"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/list_setting_list_text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/list_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/list"
+            android:textColor="@color/text_color_head"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout
+        android:id="@+id/tab_layout"
+        android:paddingHorizontal="22dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/list_setting_list_text_layout"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="bottom"
+            app:layout_constraintTop_toBottomOf="@id/list_setting_list_text_layout"
+
+            >
+            <LinearLayout
+                android:id="@+id/list_digital_detox_btn"
+                android:layout_width="107dp"
+                android:elevation="3dp"
+                android:background="@drawable/pink_list_view_radius_15"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/list_self_development_btn"
+                android:layout_width="107dp"
+                android:layout_height="35dp"
+                android:elevation="2dp"
+                android:background="@drawable/yellow_list_view_radius_15"
+                android:layout_marginStart="-5dp"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/list_goal_btn"
+                android:layout_width="107dp"
+                android:layout_height="35dp"
+                android:elevation="1dp"
+                android:background="@drawable/pink_list_view_radius_15"
+                android:layout_marginStart="-5dp"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="bottom"
+            android:elevation="0dp"
+            >
+            <TextView
+                android:id="@+id/list_digital_detox_text"
+                android:layout_width="107dp"
+                android:layout_height="35dp"
+                android:textSize="13sp"
+
+                android:textColor="@color/white"
+                android:text="@string/digital_detox"
+                android:gravity="center"
+
+                android:clickable="false"/>
+            <TextView
+                android:id="@+id/list_self_development_text"
+                android:layout_width="107dp"
+                android:layout_height="35dp"
+                android:textSize="13sp"
+
+                android:textColor="@color/text_color_in_tab"
+                android:text="@string/self_development"
+
+                android:elevation="1dp"
+                android:gravity="center"
+                android:layout_marginStart="-5dp"
+                android:clickable="false"
+                />
+            <TextView
+                android:id="@+id/list_goal_text"
+                android:layout_width="107dp"
+                android:layout_height="35dp"
+                android:textSize="13sp"
+
+                android:textColor="@color/white"
+                android:text="@string/list_goal"
+                android:layout_marginStart="-5dp"
+                android:gravity="center"
+
+                android:clickable="false"
+                />
+
+        </LinearLayout>
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/tab_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:paddingBottom="17dp"
+        android:paddingHorizontal="22dp">
+
+        <FrameLayout
+            android:id="@+id/list_frm"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingTop="40dp"
+            android:background="@drawable/white_memo_view_radius_21"
+            />
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

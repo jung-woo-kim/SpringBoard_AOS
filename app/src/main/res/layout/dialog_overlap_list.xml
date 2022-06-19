@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="35dp"
+    android:background="@drawable/white_calendar_view_radius_21"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/overlap_item_exist"
+        android:textColor="@color/text_color"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/please_other_name"
+        android:textColor="@color/text_color"
+        android:textSize="13sp"
+        android:layout_marginBottom="25dp"
+        />
+
+
+        <TextView
+            android:id="@+id/overlap_list_dialog_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yellow_view_btm_radius_21"
+            android:gravity="center"
+            android:paddingVertical="15dp"
+            android:text="@string/close"
+            android:textColor="@color/text_color_in_tab" />
+
+
+
+</LinearLayout>

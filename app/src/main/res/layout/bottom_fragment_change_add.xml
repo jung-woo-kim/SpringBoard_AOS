@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/design_bottom_sheet"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="22dp"
+    app:behavior_peekHeight="300dp"
+    android:background="@drawable/white_bottom_sheet_view_radius_21"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    app:behavior_hideable="true"
+    >
+    <TextView
+        android:id="@+id/bottom_sheet_head_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/digital_dexox_add"
+        android:textSize="20sp"
+        android:layout_marginTop="42dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <EditText
+        android:id="@+id/btm_frag_change_add_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/EditTextTheme"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:textSize="15sp"
+        android:textColor="@color/text_color"
+        android:paddingStart="5dp"
+        android:layout_marginVertical="83dp"
+
+        app:layout_constraintTop_toBottomOf="@id/bottom_sheet_head_text"
+        app:layout_constraintBottom_toTopOf="@id/btm_frag_change_add_add_button"
+
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/btm_frag_change_add_add_button"
+        android:layout_width="257dp"
+        android:layout_height="62dp"
+        android:text="@string/add"
+        android:textSize="22sp"
+        android:textColor="@color/text_color_in_tab"
+        android:gravity="center"
+
+        android:layout_marginBottom="20dp"
+        app:layout_constraintTop_toBottomOf="@id/btm_frag_change_add_edit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/yellow_view_radius_16"
+        android:elevation="0dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

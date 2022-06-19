@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!--zzatrima colors    -->
+    <color name="zzatrima_main_color_yellow">#FFD875</color>
+    <color name="zzatrima_main_color_opicity_yellow">#99FFD875</color>
+    <color name="zzatrima_main_color_opicity75_yellow">#BFFFD875</color>
+    <color name="zzatrima_main_color_opicity50_yellow">#80FFD875</color>
+    <color name="zzatrima_main_color_opicity25_yellow">#40FFD875</color>
+    <color name="zzatrima_main_color_opicity_pink">#99F5906D</color>
+    <color name="zzatrima_main_color_pink">#F5906D</color>
+    <color name="background">#F5F5F5</color>
+    <color name="login_background">#E5E5E5</color>
+    <color name="text_color">#595959</color>
+    <color name="text_color_in_tab">#765B16</color>
+    <color name="text_color_opicity_in_tab">#99765B16</color>
+    <color name="bottom_stroke">#707070</color>
+    <color name="text_color_head">#454444</color>
+    <color name="text_color_head2">#605F5F</color>
+    <color name="text_color_nonactive">#707070</color>
+    <color name="text_color_stats_kinds">#605F5F</color>
+    <color name="ground">#402F20</color>
+    <color name="transparent">#00FFFFFF</color>
+</resources>

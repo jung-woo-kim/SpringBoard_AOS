@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/stats_kind_text_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/test"
+        android:textColor="@color/text_color"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="30dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="26dp"
+        android:layout_marginBottom="70dp"
+        android:gravity="center_vertical"
+        >
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pie_chart"
+            android:layout_width="0dp"
+            android:layout_height="164dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+        <FrameLayout
+            android:id="@+id/stats_kind_no_have_time"
+            android:layout_width="0dp"
+            android:layout_height="164dp"
+            android:layout_weight="1.2"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/empty_circle"
+                />
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="164dp"
+                android:gravity="center"
+                android:textColor="@color/text_color_nonactive"
+                android:textSize="11sp"
+                android:text="@string/no_have_time"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:padding="10dp"
+                tools:ignore="SmallSp" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="20dp"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="18dp"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:background="@drawable/pink_view_radius_3"
+                    android:layout_marginEnd="6dp"
+                    />
+                <TextView
+                    android:id="@+id/stats_kind_text_pink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/test"
+                    android:textSize="11sp"
+                    tools:ignore="SmallSp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:background="@drawable/yellow_view_radius_3"
+                    android:layout_marginEnd="6dp"
+                    />
+                <TextView
+                    android:id="@+id/stats_kind_text_yellow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/test"
+                    android:textSize="11sp"
+                    tools:ignore="SmallSp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fragment_kinds_stats_digital_detox_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/black_bottom_stroke">
+        <View
+            android:id="@+id/fragment_kinds_stats_pink_view"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@drawable/pink_view_radius_3"
+            android:layout_alignParentStart="true"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="14dp"
+            />
+        <TextView
+            android:id="@+id/fragment_kinds_stats_digital_detox_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="11dp"
+            android:paddingStart="9dp"
+            tools:ignore="RtlSymmetry"
+
+            android:textSize="15sp"
+            android:textColor="@color/text_color"
+            android:text="@string/digital_detox"
+            app:layout_constraintStart_toEndOf="@id/fragment_kinds_stats_pink_view"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+        <ImageView
+            android:id="@+id/fragment_kinds_stats_gdigital_detox_arrow"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/ic_bottom_arrow"
+            app:layout_constraintStart_toEndOf="@id/fragment_kinds_stats_digital_detox_text_view"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="6dp"
+
+            />
+
+
+        <TextView
+            android:id="@+id/fragment_kinds_stats_digital_detox_min_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/min"
+            android:textColor="@color/text_color"
+            android:textSize="15sp"
+            android:layout_alignParentEnd="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="19dp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/fragment_kinds_stats_digital_detox_rv_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fragment_kinds_stats_digital_detox_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fragment_kinds_stats_self_development_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/black_bottom_stroke">
+        <View
+            android:id="@+id/fragment_kinds_stats_yellow_view"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@drawable/yellow_view_radius_3"
+            android:layout_alignParentStart="true"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="14dp"
+            />
+        <TextView
+            android:id="@+id/fragment_kinds_stats_self_deveolpment_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="11dp"
+            android:paddingStart="9dp"
+            tools:ignore="RtlSymmetry"
+
+            android:textSize="15sp"
+            android:textColor="@color/text_color"
+            android:text="@string/self_development"
+            app:layout_constraintStart_toEndOf="@id/fragment_kinds_stats_yellow_view"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+        <ImageView
+            android:id="@+id/fragment_kinds_stats_self_deveolpment_arrow"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/ic_bottom_arrow"
+            app:layout_constraintStart_toEndOf="@id/fragment_kinds_stats_self_deveolpment_text_view"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="6dp"
+            />
+
+
+        <TextView
+            android:id="@+id/fragment_kinds_stats_self_develop_min_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="19dp"
+            android:text="@string/min"
+            android:textColor="@color/text_color"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/fragment_kinds_stats_self_development_rv_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fragment_kinds_stats_self_development_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/fragment_kinds_stats_record_continue_layout"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="41dp"
+        android:gravity="center"
+        android:background="@drawable/white_view_stroke_radius_20"
+        >
+        <TextView
+            android:id="@+id/fragment_kinds_stats_record_continue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/test"
+            android:textColor="@color/text_color"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stats_recode_continue"
+            android:textColor="@color/text_color_stats_kinds"
+            android:textSize="11sp"
+
+            tools:ignore="SmallSp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

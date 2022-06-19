@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:layout_marginBottom="60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="40dp">
+            <ImageView
+                android:id="@+id/go_pre_btn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_left_arrow_calendar"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="30dp"
+                android:clickable="true"
+                android:focusable="true"
+                />
+            
+            <TextView
+                android:id="@+id/stats_month_text"
+                
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="16dp"
+                android:textStyle="bold"
+                android:text="@string/test"
+                android:textSize="18sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                />
+            <ImageView
+                android:id="@+id/go_next_btn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_right_arrow_calendar"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="30dp"
+                android:clickable="false"
+                android:alpha="0.6"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <FrameLayout
+            android:id="@+id/stats_calendar_frm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_calendar_view_radius_21"
+            android:layout_marginHorizontal="22dp"
+            />
+        <FrameLayout
+            android:id="@+id/tab_layout"
+            android:paddingHorizontal="22dp"
+            android:layout_marginTop="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/list_setting_list_text_layout">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:gravity="bottom"
+                app:layout_constraintTop_toBottomOf="@id/list_setting_list_text_layout"
+
+                >
+                <LinearLayout
+                    android:id="@+id/tab_daily_stats_btn"
+                    android:layout_width="107dp"
+                    android:elevation="3dp"
+                    android:background="@drawable/pink_list_view_radius_15"
+                    android:layout_height="35dp"
+                    android:orientation="horizontal">
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/tab_monthly_stats_btn"
+                    android:layout_width="107dp"
+                    android:layout_height="35dp"
+                    android:elevation="2dp"
+                    android:background="@drawable/yellow_list_view_radius_15"
+                    android:layout_marginStart="-5dp"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:gravity="bottom"
+                android:elevation="0dp"
+                >
+                <TextView
+                    android:id="@+id/tab_daily_text"
+                    android:layout_width="107dp"
+                    android:layout_height="35dp"
+                    android:textSize="13sp"
+
+                    android:textColor="@color/white"
+                    android:text="@string/stats_dalily"
+                    android:gravity="center"
+
+                    android:clickable="false"/>
+                <TextView
+                    android:id="@+id/tab_monthly_text"
+                    android:layout_width="107dp"
+                    android:layout_height="35dp"
+                    android:textSize="13sp"
+
+                    android:textColor="@color/text_color_in_tab"
+                    android:text="@string/stats_monthly"
+
+                    android:elevation="1dp"
+                    android:gravity="center"
+                    android:layout_marginStart="-5dp"
+                    android:clickable="false"
+                    />
+            </LinearLayout>
+
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/stats_daily_monthly_frm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="22dp"
+            android:layout_marginBottom="20dp"
+            android:paddingBottom="30dp"
+            android:background="@drawable/white_memo_view_radius_21"
+            />
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

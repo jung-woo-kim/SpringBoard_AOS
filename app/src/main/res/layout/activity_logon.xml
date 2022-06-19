@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center_horizontal">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingHorizontal="22dp"
+        android:layout_marginTop="70dp"
+        >
+        <EditText
+            android:id="@+id/email_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:theme="@style/EditTextTheme"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="8dp"
+            android:hint="@string/email_address"
+
+            android:textCursorDrawable="@color/black"
+            android:textSize="15sp"
+            android:textColorHint="@color/text_color"
+            />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingHorizontal="22dp"
+        >
+        <EditText
+            android:id="@+id/password_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:theme="@style/EditTextTheme"
+            android:drawableStart="@drawable/ic_password"
+            android:drawablePadding="8dp"
+            android:textCursorDrawable="@color/black"
+            android:inputType="textPassword"
+            android:hint="@string/passwod_condition"
+            android:textSize="15sp"
+            android:textColorHint="@color/text_color"
+            />
+
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/logon_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="22dp"
+        android:paddingVertical="13dp"
+        android:text="@string/logon"
+        android:textSize="18sp"
+        android:textColor="@color/text_color_in_tab"
+        android:gravity="center"
+        android:clickable="false"
+        android:alpha="0.6"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/yellow_view_radius_16"
+        android:elevation="0dp"
+        android:layout_marginVertical="20dp"
+        />
+</LinearLayout>

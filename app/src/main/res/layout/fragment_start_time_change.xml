@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:layout_marginBottom="60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/setting_timer_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/setting_time"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_color_head"
+        android:paddingTop="40dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/setting_timer_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/set_starttime_setence"
+            android:textColor="@color/black"
+            android:paddingHorizontal="22dp"
+            android:layout_marginBottom="30dp"
+            />
+
+        <FrameLayout
+            android:id="@+id/start_time_frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="22dp"
+            android:background="@drawable/white_view_radius_26"
+            android:paddingHorizontal="19dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_gravity="center"
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:background="@drawable/yellow_view_radius_16"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <com.springboard.zzatmari.util.CustomTimePicker
+                android:id="@+id/start_time_picker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:timePickerMode="spinner"
+                android:spinnersShown="false"
+                android:layout_gravity="center"
+                android:theme="@style/MyAppTheme.NumberPicker"
+                />
+        </FrameLayout>
+        <TextView
+            android:id="@+id/setting_timer_complete_btn"
+            android:layout_width="257dp"
+            android:layout_height="62dp"
+            android:text="@string/complete"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginTop="45dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@drawable/pink_view_radius_16"
+            android:layout_marginBottom="35dp"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

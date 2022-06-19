@@ -1,0 +1,146 @@
+<resources>
+    <!-- btm nav -->
+    <string name="app_name">짜트마리</string>
+    <string name="main_btm_nav_home_title">LIST</string>
+    <string name="main_btm_nav_my_page_title">MY</string>
+    <string name="main_btm_nav_plant_title">PLANT</string>
+    <string name="main_btm_nav_STATS_title">STATS</string>
+    <!-- util -->
+    <string name="add">추가</string>
+    <string name="cancel">취소</string>
+    <string name="change">수정</string>
+    <string name="continued">계속하기</string>
+    <string name="delete">삭제</string>
+    <!-- number -->
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <!-- bottom sheet dialog -->
+    <string name="digital_dexox_add">디지털디톡스 추가</string>
+    <string name="digital_detox_change">디지털디톡스 편집</string>
+    <string name="self_development_add">자기개발 추가</string>
+    <string name="self_development_change">자기개발 편집</string>
+    <string name="goal_of_it">%10s의 목표</string>
+    <string name="complete">완료</string>
+    <string name="close">닫기</string>
+    <!-- start -->
+    <string name="start_text_head1">하루가\n끝나는 시간이 언제인가요?</string>
+    <string name="start_text_head2">당신의 하루가 끝나는 시간을 설정해주세요.\n설정된 시간에 맞추어 하루 누적통계가 쌓이게 됩니다.</string>
+    <string name="next">다음</string>
+    <string name="can_change_at_setting">*[설정]을 통해 수정할 수 있습니다.</string>
+    <string name="can_change_at_list">*[LIST]에서 추가 및 삭제할 수 있습니다.</string>
+
+    <string name="digital_detox">디지털 디톡스</string>
+    <string name="self_development">자기개발</string>
+    <string name="digital_detox_text1">자투리 시간에 할 일을 선택해주세요. \n디지털 디톡스란, 스마트 기기 사용에서 잠시 벗어나 정신적 회복을 하는 것입니다.</string>
+    <string name="self_development_text1">자투리 시간에 하고자하는 자기계발을 선택해주세요.</string>
+    
+    <!-- digital detox -->
+    <string name="to_do_digital_detox_bruise">멍때리기</string>
+    <string name="to_do_digital_detox_meditation">명상</string>
+    <string name="to_do_digital_detox_drawing">드로잉</string>
+    <string name="to_do_digital_detox_walk">산책</string>
+    <string name="to_do_digital_detox_stretch">스트레칭</string>
+    <string name="to_do_digital_detox_sleep">낮잠</string>
+    <string name="to_do_digital_detox_exercise">운동</string>
+    <string name="to_do_digital_detox_account">가계부</string>
+    <string name="to_do_digital_detox_clean">청소</string>
+    <string name="to_do_digital_detox_reading">독서</string>
+    <string name="to_do_digital_detox_go_out">외출</string>
+    <string name="to_do_digital_detox_memo">메모</string>
+    <string name="to_do_digital_detox_thinking">생각정리</string>
+    
+
+    <!--self development-->
+    <string name="to_do_self_development_english">영단어암기</string>
+    <string name="to_do_self_development_ted">테드</string>
+    <string name="to_do_self_development_certificate">자격증</string>
+    <string name="to_do_self_development_english_speaking">회화공부</string>
+    <string name="to_do_self_development_reading_news">신문읽기</string>
+    <string name="to_do_self_development_plan">계획짜기</string>
+    <string name="to_do_self_development_japanese">일어공부</string>
+    <string name="to_do_self_development_writing">글쓰기</string>
+    <string name="to_do_self_development_chinese">한문공부</string>
+    <string name="to_do_self_development_guitar">기타연습</string>
+    <string name="to_do_self_development_finance">제테크</string>
+    <string name="to_do_self_development_daily">하루기록</string>
+    <string name="to_do_self_development_spec">스펙쌓기</string>
+
+    <!-- stats -->
+    <string name="stats_dalily">일별통계</string>
+    <string name="stats_monthly">월별통계</string>
+    <string name="stats_recode_continue">현재연속기록</string>
+    <string name="no_have_time">오늘은 누적된\n자투리 시간이 없어요</string>
+    <!-- list -->
+    <string name="list">리스트</string>
+    <string name="list_goal">목표</string>
+
+    <!-- timer -->
+    <string name="timer">타이머</string>
+    <string name="time_divider">:</string>
+    <string name="timer_stop">일시정지</string>
+    <string name="timer_finish">그만두기</string>
+    <string name="min">min</string>
+    <string name="hour">시간</string>
+    <string name="minute">분</string>
+    <!-- dialog -->
+    <string name="remove_it">해당항목을 삭제하시겠습니까?</string>
+    <string name="overlap_item_exist">중복된 이름이 있습니다!</string>
+    <string name="please_other_name">다른 이름으로 편집해주세요.</string>
+    <string name="past_removed_item_same">이전의 삭제된 항목과 동일한 항목입니다.</string>
+    <string name="please_plus_instead">삭제된 항목의 이름으로 수정을 원하시는 경우에는 항목추가기능을 사용해주세요.</string>
+    <string name="yes">네</string>
+    <string name="no">아니오</string>
+    <!-- Home -->
+    <string name="home_btn_try_get_http_method">GET API 보내기</string>
+    <string name="home_btn_try_post_http_method">POST API 보내기</string>
+    <string name="home_et_id">아이디를 입력하세요.</string>
+    <string name="home_et_pw">비밀번호를 입력하세요.</string>
+
+    <!-- plant -->
+    <string name="plant_seed_ware_house">창고</string>
+    <string name="has_seed_number">보유수량: %1$d개</string>
+    <string name="seed_name">%10$</string>
+    <string name="flower_open_time">개화시간 %2d시간</string>
+    <string name="glow_up_time">누적 %1d시간마다 성장</string>
+    <string name="plant_reward">보상 %2d햇살</string>
+    <string name="plant">심기</string>
+    <string name="plant_price_seed">%2d햇살</string>
+    <string name="plant_new_seed">새로운 씨앗을 심어주세요</string>
+    <string name="touch_harvest">터치해서 수확하세요!</string>
+    <string name="no_have_seed">창고가 비어있어요.\n상점에서 새로운 씨앗을 구매해보세요.</string>
+    <!-- MyPage -->
+    <string name="myPage">마이페이지</string>
+    <string name="shop">상점</string>
+    <string name="sunny">햇살</string>
+    <string name="buying">구매하기</string>
+    <string name="check_in_seed_warehouse">씨앗창고에서 확인해보세요.</string>
+    <string name="email">이메일</string>
+    <string name="change_password">비밀번호 변경</string>
+    <string name="log_out">로그아웃</string>
+    <!-- test -->
+    <string name="test">test</string>
+    <string name="zero_min">0 min</string>
+    <string name="already_exist_seed">이미 심어져있는 씨았이 있습니다!</string>
+    <string name="can_plant_one_seed">씨앗은 하나씩만 심을 수 있어요!</string>
+    <string name="question_write_goal">오늘의 자투리 목표를 세우시겠습니까?</string>
+    <string name="get_achive_by_goal">목표를 달성했을 때의 성취감을 느껴보세요!</string>
+    <string name="stay">유지</string>
+    <string name="question_about_end_timer">타이머를 종료시키시겠습니까?</string>
+    <string name="end">종료</string>
+    <string name="time_set">시간 설정</string>
+    <string name="plant_house">정원</string>
+    <string name="setting_time">시간설정</string>
+    <string name="set_starttime_setence">하루가 끝나는 시간을 수정할 수 있습니다.\n수정된 시간에 맞추어 하루 누적통계가 쌓이게 됩니다.</string>
+    <string name="email_address">이메일 주소</string>
+    <string name="password">비밀번호</string>
+    <string name="log_in">로그인</string>
+    <string name="or">또는</string>
+    <string name="logon">가입하기</string>
+    <string name="passwod_condition">비밀번호는 6~15자여야 합니다</string>
+    <string name="question_logout">로그아웃 하시겠습니까?</string>
+    <string name="empty_list">리스트가 비어있어요.\n 하단의 추가버튼을 통해 항목을 추가해보세요.</string>
+    <string name="forget_password">암호를 잃어버렸습니까?</string>
+</resources>

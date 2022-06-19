@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyAppTheme.NumberPicker" parent="MyAppTheme">
+        <item name="android:colorControlNormal"> #FFFFFF </item>
+    </style>
+    <style name="NumberPicker" parent="MyAppTheme">
+        <item name="android:colorControlNormal"> @color/background </item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="MyAppTheme" />
+
+    <style name="BottomNavigationView" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">10sp</item>
+    </style>
+    <style name="BottomNavigationView.Active" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">11sp</item>
+    </style>
+    <style name="EditTextTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">#D6D6D6</item>
+        <item name="colorControlActivated">#D6D6D6</item>
+        <item name="colorControlHighlight">@color/black</item>
+    </style>
+
+
+    <style name="DialogStyle" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="gestureInsetBottomIgnored">true</item>
+    </style>
+    <style name="AppBottomSheetDialogTheme"
+        parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+
+
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/white_bottom_sheet_view_radius_21</item>
+        <item name="behavior_peekHeight">300dp</item>
+    </style>
+</resources>
